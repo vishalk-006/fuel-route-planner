@@ -1,0 +1,13 @@
+[project]
+name = "fuel-route-planner"
+version = "1.0.0"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["fuelplanner/migrations"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "C4", "DJ", "PIE", "RET", "PTH", "RUF"]
+ignore = ["RUF012"]
